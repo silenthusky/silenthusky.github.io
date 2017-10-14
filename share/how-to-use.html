@@ -231,13 +231,12 @@ npm install gitbook-cli -g
 # &#x5B89;&#x88C5;&#x672C;&#x5730;&#x6A21;&#x5757;
 npm install
 </code></pre><h2 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;">&#x5982;&#x4F55;&#x4F7F;&#x7528;</h2>
-<pre><code>git clone
-cd
+<pre><code>mkdir gitbook
+git clone https://github.com/silenthusky/docs.git
+cd docs
 # &#x7B2C;&#x4E00;&#x6B21;&#x8981;&#x6267;&#x884C;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;
 gitbook install
-
 git init
-
 # &#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x770B;&#x4E0B;&#x5177;&#x4F53;&#x7684;&#x6548;&#x679C;
 # &#x8BBF;&#x95EE;&#x5730;&#x5740;&#x4E3A; http://localhost:4000
 gitbook build &amp;&amp; gitbook serve
@@ -251,13 +250,12 @@ gitbook build &amp;&amp; gitbook serve
 </code></pre><p>&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6B21;&#x90FD;&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E86;&#x3002;</p>
 <p>&#x6700;&#x540E;&#x6211;&#x4EEC;&#x8981;&#x628A;&#x6539;&#x52A8; push &#x5230; github &#x4E0A;&#x53BB;&#x3002;</p>
 <h2 id="&#x5982;&#x4F55;&#x90E8;&#x7F72;">&#x5982;&#x4F55;&#x90E8;&#x7F72;</h2>
-<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x5728; _book &#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x4E86;&#x7F51;&#x7AD9;&#x7684; html &#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5C06;&#x5B83; push &#x5230; github &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
 <p>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x547D;&#x4EE4;</p>
-<pre><code>make
-</code></pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x547D;&#x4EE4; push&#x3002;</p>
-<pre><code>git add .
-git commit -m &quot;&lt;commit message&gt;&quot;
-git push
+<pre><code>cd gitbook
+# &#x7B2C;&#x4E00;&#x6B21;&#x9700;&#x8981;&#x5148;clone
+git clone https://github.com/silenthusky/silenthusky.github.io.git
+cd silenthusky.github.io
+./publish.sh
 </code></pre>
                                 </div>
                                 
@@ -312,7 +310,7 @@ git push
 <script>
     var gitbook = gitbook || [];
     gitbook.push(function() {
-        gitbook.page.hasChanged({"page":{"title":"如何使用这个wiki系统","level":"2.1.1","depth":2,"next":{"title":"git的workflow","level":"2.1.2","depth":2,"path":"share/git-workflow.md","ref":"share/git-workflow.md","articles":[]},"previous":{"title":"技术分享","level":"2.1","depth":1,"path":"share/README.md","ref":"share/README.md","articles":[{"title":"如何使用这个wiki系统","level":"2.1.1","depth":2,"path":"share/how-to-use.md","ref":"share/how-to-use.md","articles":[]},{"title":"git的workflow","level":"2.1.2","depth":2,"path":"share/git-workflow.md","ref":"share/git-workflow.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","theme-official","livereload"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"livereload":{},"highlight":{},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","head_keywords":"沉默的哈士奇,文档","logo":"./images/logo.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"沉默的哈士奇","language":"zh-hans","head_title":"_文档_沉默的哈士奇","gitbook":">= 3.0.0","head_description":"文档"},"file":{"path":"share/how-to-use.md","mtime":"2017-10-14T09:24:07.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-14T09:53:15.453Z"},"basePath":"..","book":{"language":""}});
+        gitbook.page.hasChanged({"page":{"title":"如何使用这个wiki系统","level":"2.1.1","depth":2,"next":{"title":"git的workflow","level":"2.1.2","depth":2,"path":"share/git-workflow.md","ref":"share/git-workflow.md","articles":[]},"previous":{"title":"技术分享","level":"2.1","depth":1,"path":"share/README.md","ref":"share/README.md","articles":[{"title":"如何使用这个wiki系统","level":"2.1.1","depth":2,"path":"share/how-to-use.md","ref":"share/how-to-use.md","articles":[]},{"title":"git的workflow","level":"2.1.2","depth":2,"path":"share/git-workflow.md","ref":"share/git-workflow.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","-lunr","-search","search-pro","theme-official","livereload"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"livereload":{},"highlight":{},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","head_keywords":"沉默的哈士奇,文档","logo":"./images/logo.png","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"沉默的哈士奇","language":"zh-hans","head_title":"_文档_沉默的哈士奇","gitbook":">= 3.0.0","head_description":"文档"},"file":{"path":"share/how-to-use.md","mtime":"2017-10-14T10:03:56.268Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-14T10:05:38.837Z"},"basePath":"..","book":{"language":""}});
     });
 </script>
 <script>
